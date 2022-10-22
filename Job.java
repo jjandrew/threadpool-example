@@ -1,10 +1,16 @@
 public class Job implements Runnable {
+	/**
+	 * @param jobNumber number of the job running
+	 */
 	private int jobNumber;
 
  	Job (int jobNumber) {
  		this.jobNumber = jobNumber;
  	}
 
+	/**
+	 * Runs the Job
+	 */
  	public void run () {
  	// Undertake required work, here we will emulate it by sleeping for a period
 	 System.out.println ("Job: " + jobNumber + " is being processed by thread : "

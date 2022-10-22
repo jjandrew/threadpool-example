@@ -2,6 +2,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 
 public class ThreadPoolApp {
+    /**
+     * @param args First argument no. jobs, second no. threads
+     */
     public static void main (String [] args) {
         if (args.length < 2)
             ThreadPoolApp.error();
